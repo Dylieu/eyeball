@@ -1,28 +1,36 @@
 //add eyeball code here
 
-size (400, 400);
+// setting the background.
+size (500, 600);
+background (170, 170, 170);
 
-long xPos = 200;
+// the outter eye
+fill (255);
+ellipse (250, 350, 200, 200);
 
-background (0, 100, 255);
+// the blue of the eye
+fill (0, 50, 150, 90);
+ellipse (250, 350, 125, 125);
 
-//shadow
-fill (0, 0, 0, 200);
-ellipse (160, 270, 300, 100);
+// the black of the eye
+fill (0);
+ellipse (250, 350, 75, 75);
 
-//white of Eye
-fill (255, 255, 255);
-ellipse (xPos + 50, 150, 250, 250);
+// the light reflection of the eye
+fill (255);
+ellipse (277, 318, 20, 23);
 
-//stuff i dont know the name of
-fill (100, 50, 0);
-ellipse (xPos + 50, 150, 150, 150);
+// the bubbles in the jar
+fill (255);
+ellipse (183, 217 - 20, 8, 8);
+ellipse (203, 254 - 20, 8, 8);
+ellipse (173, 267 - 20, 8, 8);
+ellipse (193, 187 - 20, 8, 8);
 
-fill (100, 75, 0, 75);
-ellipse (xPos + 50, 150, 100, 100);
+// the jar
+fill (40, 165, 80, 100);
+rect (50, 80, 400, 520, 70);
 
-fill (0, 0, 0);
-ellipse (xPos + 50, 150, 50, 50);
-
-fill (255, 255, 255);
-ellipse (xPos + 10, 110, 25, 25);
+// the jar lid
+fill (0);
+rect (50, 60, 400, 50, 70);
